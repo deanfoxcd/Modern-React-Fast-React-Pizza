@@ -1,5 +1,5 @@
-# Build a a Pizza Restaurant Website
+# Build a Pizza Restaurant Website
 
 Using:
 
- - Vite
+- Vite
