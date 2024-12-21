@@ -5,13 +5,19 @@ import Home from './ui/Home';
 import Cart from './features/cart/Cart';
 import Order from './features/order/Order';
 import CreateOrder from './features/order/CreateOrder';
+import AppLayout from './ui/AppLayout';
 
 const router = createBrowserRouter([
-  { path: '/', element: <Home /> },
-  { path: '/menu', element: <Menu /> },
-  { path: '/cart', element: <Cart /> },
-  { path: '/order/:orderId', element: <Order /> },
-  { path: '/order/new', element: <CreateOrder /> },
+  {
+    element: <AppLayout />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/menu', element: <Menu /> },
+      { path: '/cart', element: <Cart /> },
+      { path: '/order/:orderId', element: <Order /> },
+      { path: '/order/new', element: <CreateOrder /> },
+    ],
+  },
 ]);
 
 export default function App() {
