@@ -148,7 +148,6 @@ export async function action({ request }) {
     cart: JSON.parse(data.cart),
     priority: data.priority === "true",
   };
-  console.log(order);
 
   const errors = {};
 
