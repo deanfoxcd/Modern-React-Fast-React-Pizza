@@ -3,3 +3,9 @@
 Using:
 
 - Vite
+- fetcher
+- loader
+- Redux
+- React router
+- Thunks
+- Tailwind

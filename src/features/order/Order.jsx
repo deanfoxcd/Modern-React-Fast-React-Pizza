@@ -1,16 +1,16 @@
 // Test ID: IIDSAT
 
-import OrderItem from "./OrderItem";
-
+import { useEffect } from "react";
 import { useFetcher, useLoaderData } from "react-router-dom";
+
+import OrderItem from "./OrderItem";
+import UpdateOrder from "./UpdateOrder";
 import { getOrder } from "../../services/apiRestaurant";
 import {
   calcMinutesLeft,
   formatCurrency,
   formatDate,
 } from "../../utilities/helpers";
-import { useEffect } from "react";
-import UpdateOrder from "./UpdateOrder";
 
 function Order() {
   const order = useLoaderData();
